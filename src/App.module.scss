@@ -25,6 +25,9 @@ body{
         border: solid 1px #7BC5AE;
         padding: 50px;
         border-radius: 30px;
+        @media screen and (min-width: 1919px) {
+            margin-top: 1vw;
+        }
     }
     .Settings{
         width: fit-content;
@@ -35,6 +38,10 @@ body{
     .Password{
         font-size: 100px;
         margin-bottom: 6vw;
+        @media screen and (min-width: 1919px) {
+            margin-top: 6vw;
+            margin-bottom: 1vw;
+        }
     }
     button{
         min-height: 8vw;
