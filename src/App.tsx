@@ -5,7 +5,7 @@ import s from './App.module.scss'
 function App() {
   const abc = 'abcdefghijklmnopqrstuvwxyz'
   const nums = '0123456789'
-  const simbols = '!@#$%^&*()_+-=?><:;[]{}`~'
+  const signs = '!@#$%^&*()_+-=?><:;[]{}`~'
   const [value, setValue] = useState<any>([])
   const [limit, setLimit] = useState<string>("6")
   const [UpperCase, setUpperCase] = useState(false)
@@ -19,7 +19,7 @@ function App() {
   const CreatePassword = () => {
     let h: Array<any> = []
     let alphabet:any = abc.split("")
-    Symbols ? Numbers ? alphabet =  abc + abc + abc + simbols + nums : alphabet = abc + abc + abc + simbols  : Numbers ? alphabet = abc + nums : alphabet = abc
+    Symbols ? Numbers ? alphabet =  abc + abc + abc + signs + nums : alphabet = abc + abc + abc + signs  : Numbers ? alphabet = abc + nums : alphabet = abc
     for (let i = 0; i < Number(limit) ; i++){
       const s = Math.floor(Math.random() * alphabet.length)
       let k:string = alphabet[s]
