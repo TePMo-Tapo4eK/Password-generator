@@ -28,6 +28,9 @@ body{
         @media screen and (min-width: 1919px) {
             margin-top: 1vw;
         }
+        @media screen and (max-height: 1000px) {
+            margin-top: 2vw;
+        }
     }
     .Settings{
         width: fit-content;
@@ -41,6 +44,10 @@ body{
         @media screen and (min-width: 1919px) {
             margin-top: 6vw;
             margin-bottom: 1vw;
+        }
+        @media screen and (max-height: 1000px) {
+            margin-top: 6vw;
+            margin-bottom: 0vw;
         }
     }
     button{
