@@ -8,9 +8,9 @@ function App() {
   const signs = '!@#$%^&*()_+-=?><:;[]{}`~'
   const [value, setValue] = useState<any>([])
   const [limit, setLimit] = useState<string>("6")
-  const [UpperCase, setUpperCase] = useState(false)
-  const [Symbols, setSymbols] = useState(false)
-  const [Numbers, setNumbers] = useState(false)
+  const [UpperCase, setUpperCase] = useState<boolean>(false)
+  const [Symbols, setSymbols] = useState<boolean>(false)
+  const [Numbers, setNumbers] = useState<boolean>(false)
 
   useEffect(() => {
     CreatePassword()
